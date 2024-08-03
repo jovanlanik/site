@@ -16,9 +16,9 @@
        xlink:href="#Wave 3"
        preserveAspectRatio="xMidYMid"
        id="pattern21"
-       patternTransform="matrix(0.11,0,0,0.11,530,595)"
+       patternTransform="matrix(0.21,0,0,0.21,530,595)"
        x="0"
-       y="0" />
+       y="47" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5">
@@ -49,7 +49,7 @@
   <g
      id="layer1">
     <rect
-       style="fill:#206492;fill-opacity:1;stroke:#00223b;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:#206492;fill-opacity:1;stroke:#00223b;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect4"
        width="11.006667"
        height="11.006667"
@@ -65,12 +65,12 @@
        y="0.84666669"
        ry="0.42333332" />
     <path
-       style="fill:#edcd19;fill-opacity:1;stroke:#4a3516;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:#edcd19;fill-opacity:1;stroke:#4a3516;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 8.0434875,4.3573564 6.7729763,8.0351681 6.7730785,9.736873 a 0.84666602,0.84666602 0 0 0 0.8467819,0.84646 H 10.37163 a 0.211666,0.211666 0 0 0 0.211566,-0.211873 l 1.95e-4,-0.8464604 A 0.211666,0.211666 0 0 0 10.371726,9.3131262 H 8.4669332 a 0.42333322,0.42333322 18.434949 0 1 -0.423391,-0.42323 z"
        transform="matrix(1,0,0.12049871,1,-0.98709398,4.008274e-7)"
        id="path11" />
     <path
-       style="fill:#edcd19;fill-opacity:1;stroke:#4a3516;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:#edcd19;fill-opacity:1;stroke:#4a3516;stroke-width:1.32292;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 4.2333342,10.583333 H 2.3283334 A 0.21166671,0.21166671 45 0 1 2.1166667,10.371666 V 9.5250006 A 0.21166671,0.21166671 135 0 1 2.3283334,9.3133339 h 1.4816665 a 0.84666696,0.84666696 135 0 0 0.846667,-0.846667 V 3.8100004 A 0.42333343,0.42333343 45 0 0 4.2333335,3.386667 H 2.3283336 A 0.2116669,0.2116669 45 0 1 2.1166667,3.1750001 V 2.3291607 A 0.21249355,0.21249355 135 0 1 2.3291603,2.1166671 h 2.7508403 a 0.84666633,0.84666633 45 0 1 0.8466663,0.8466663 l 0,5.9266669 A 1.6933327,1.6933327 135 0 1 4.2333342,10.583333 Z"
        id="path1"
        transform="matrix(1,0,-0.22490231,1,2.2374032,2.0082741e-7)" />
