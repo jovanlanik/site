@@ -3,3 +3,7 @@ body {
 	color: #0c0c0c;
 	font-family: "Sans";
 }
+
+a {
+	text-decoration: none;
+}
