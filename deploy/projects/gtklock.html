@@ -15,6 +15,9 @@
 				height: auto;
 				border: 2px solid #e5e5e5;
 			}
+			.nowrap {
+				white-space: nowrap;
+			}
 		</style>
 	</head>
 	<body>
@@ -38,8 +41,8 @@
 				It's available on many linux distributions.
 				I was dissatisfied with the options available at the time and decided to create an alternative by
 				taking the UI of <a href="https://git.sr.ht/~kennylevinsen/gtkgreet">gtkgreet</a> and writing a
-				<nobr>wlr-layer-shell/wlr-input-inhibitor</nobr> lockscreen around it. It slowly grew with new
-				features such as module support and was ported to the new <nobr>ext-session-lock</nobr> protocol.
+				<span class="nowrap">wlr-layer-shell/wlr-input-inhibitor</span> lockscreen around it. It slowly grew with new
+				features such as module support and was ported to the new <span class="nowrap">ext-session-lock</span> protocol.
 			</p>
 			<h3>Screenshots</h3>
 			<img class="screen" alt="gtklock's default config" title="gtklock's default config" src="./gtklock.png">
@@ -49,6 +52,6 @@
 			</ul>
 		</main>
 		<hr>
-		<footer><img alt="under construction" src="/construction.svg"><p>Copyright (c) 2024 Jovan Lanik</p></footer>
+		<footer><img alt="" src="/construction.svg"><p>Copyright (c) 2024 Jovan Lanik</p></footer>
 	</body>
 </html>
