@@ -18,6 +18,7 @@ pre {
 hr {
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 #top {

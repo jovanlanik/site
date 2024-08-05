@@ -14,9 +14,28 @@
 				width: 100%;
 				height: auto;
 				border: 2px solid #e5e5e5;
+				box-sizing: border-box;
 			}
 			.nowrap {
 				white-space: nowrap;
+			}
+			#float {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 16px;
+			}
+			#float > div {
+				width: 480px;
+				flex-grow: 1;
+			}
+			#float p:first-child {
+				margin-top: 0;
+			}
+			#float > #badge {
+				display: contents;
+			}
+			#float > #badge > img {
+				display: block;
 			}
 		</style>
 	</head>
@@ -36,20 +55,30 @@
 		<hr>
 		<main>
 			<h2><a href="/projects.html">Projects</a>/gtklock</h2>
-			<p>
-				gtklock is a GTK-based lockscreen for Wayland and seems to be my most succesful project.
-				It's available on many linux distributions.
-				I was dissatisfied with the options available at the time and decided to create an alternative by
-				taking the UI of <a href="https://git.sr.ht/~kennylevinsen/gtkgreet">gtkgreet</a> and writing a
-				<span class="nowrap">wlr-layer-shell/wlr-input-inhibitor</span> lockscreen around it. It slowly grew with new
-				features such as module support and was ported to the new <span class="nowrap">ext-session-lock</span> protocol.
-			</p>
+			<div id="float">
+				<div>
+					<p>
+						gtklock is a GTK-based lockscreen for Wayland and seems to be my most succesful
+						project. It's available on many linux distributions.
+					</p>
+						I was dissatisfied with the options available
+						at the time and decided to create an alternative by taking the UI of
+						<a href="https://git.sr.ht/~kennylevinsen/gtkgreet">gtkgreet</a> and writing a
+						<span class="nowrap">wlr-layer-shell/wlr-input-inhibitor</span> lockscreen around
+						it. It slowly grew with new features such as module support and was ported to the
+						new <span class="nowrap">ext-session-lock</span> protocol.
+					</p>
+					<h3>Links</h3>
+					<ul>
+						<li><a href="https://github.com/jovanlanik/gtklock">gtklock on GitHub</a></li>
+					</ul>
+				</div>
+				<a id="badge" href="https://repology.org/project/gtklock/versions">
+					<img src="https://repology.org/badge/vertical-allrepos/gtklock.svg" alt="Packaging status">
+				</a>
+			</div>
 			<h3>Screenshots</h3>
 			<img class="screen" alt="gtklock's default config" title="gtklock's default config" src="./gtklock.png">
-			<h3>Links</h3>
-			<ul>
-				<li><a href="https://github.com/jovanlanik/gtklock">gtklock on GitHub</a></li>
-			</ul>
 		</main>
 		<hr>
 		<footer><img alt="" src="/construction.svg"><p>Copyright (c) 2024 Jovan Lanik</p></footer>
