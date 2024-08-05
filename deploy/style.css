@@ -21,6 +21,16 @@ hr {
 	box-sizing: border-box;
 }
 
+pre {
+	background: #0c0c0c;
+	color: #f5f5f5;
+	padding: 8px;
+	font-size: 14px;
+	border: 2px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
 #top {
 	display: flex;
 }
