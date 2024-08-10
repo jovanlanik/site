@@ -39,7 +39,7 @@ if __name__ == "__main__":
     dir = content_dir.walk()
     for path, dirs, files in dir:
         for dir in dirs:
-            main_out.joinpath(dir).mkdir(exist_ok=True)
+            main_out.joinpath(path.relative_to(content_dir) / dir).mkdir(exist_ok=True)
 
         for file in files:
             input = path / file
@@ -74,6 +74,7 @@ if __name__ == "__main__":
             all_vars.update(site_vars)
             all_vars.update(page_vars)
 
+            top = False
             parent = input.parent
             if input.stem == "index" and parent != content_dir:
                 index = parent.relative_to(content_dir)
@@ -84,6 +85,7 @@ if __name__ == "__main__":
                 if parent.parent != content_dir:
                     print(f"Found index: {index}")
                 else:
+                    top = True
                     print(f"Found top-level index: {index}")
                     if all_vars["hide"] == "False":
                         nav.append({
@@ -95,6 +97,7 @@ if __name__ == "__main__":
                 if parent != content_dir:
                     print(f"Found page: {input.name}")
                 else:
+                    top = True
                     print(f"Found top-level page: {input.name}")
                     if all_vars["hide"] == "False":
                         top = input.relative_to(content_dir)
@@ -110,20 +113,25 @@ if __name__ == "__main__":
             page["output"] = output
             page["template"] = template
             page["vars"] = all_vars
+            page["top"] = str(top)
 
             pages.append(page)
 
     for page in pages:
         page["vars"]["nav"] = nav
         page["vars"]["path"] = []
-        if page["input"].stem != "index":
-            iter = reversed(page["input"].relative_to(content_dir).parents)
-            next(iter)
-            for parent in iter:
+        if page["top"] == "False":
+            parents = list(page["input"].relative_to(content_dir).parents)
+            parents.reverse()
+            parents.pop(0)
+            if page["input"].stem == "index":
+                parents.pop(-1)
+            for parent in parents:
                 page["vars"]["path"].append(paths[parent])
 
-        name = page["output"].name
-        print(f"Generating {name}")
+        out_name = page["output"].name
+        in_name = page["input"].name
+        print(f"Generating {out_name} from {in_name}")
 
         genpage = sitegen.Page(content=page["content"], template=page["template"], env=env, **page["vars"])
         with open(page["output"], "w", encoding="utf-8") as file:

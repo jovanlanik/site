@@ -1,7 +1,5 @@
 {% extends "default.j2" %}
 {% block main %}
-	<h2>
-		{% for item in path %}<a href="{{ item.href }}">{{ item.title }}</a>/{% endfor %}{{ title }}
-	</h2>
+	<h2>{% for item in path %}<a href="{{ item.href }}">{{ item.title }}</a>/{% endfor %}{{ title }}</h2>
 	{{ super() }}
 {% endblock %}
