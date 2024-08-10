@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block head %}
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="/style.css">
+			<link rel="icon" href="/favicon.svg">
+			<link rel="icon" type="image/png" href="/favicon.png">
+			<title>{{ title }} - {{ site_short }}</title>
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+			<div id="top">
+				<img alt="" src="/favicon.svg">
+				<h1>{{ site }}</h1>
+			</div>
+			<nav>
+				<a href="/">Homepage</a>
+				<a href="/projects.html">Projects</a>
+				<a href="/friends.html">Friends</a>
+			</nav>
+		</header>
+		<hr>
+		<main>
+			{% block main %}
+				{{ content }}
+			{% endblock %}
+		</main>
+		<hr>
+		<footer>
+			{% block badges %}
+				{% if under_construction == "True" %}
+					<img alt="" src="/construction.svg">
+				{% endif %}
+			{% endblock %}
+			{% block footer %}
+				<p>{{ copyright }}</p>
+			{% endblock %}
+		</footer>
+	</body>
+</html>

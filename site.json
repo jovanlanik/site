@@ -1,0 +1,7 @@
+{
+	"site": "Jovan's personal site",
+	"site_short": "Jovan's site",
+	"copyright": "Copyright (c) 2024 Jovan Lanik",
+	"template": "default.j2",
+	"under_construction": "True"
+}
