@@ -29,8 +29,10 @@ if __name__ == "__main__":
     env = Environment(loader=FileSystemLoader([content_dir, template_dir]), autoescape=select_autoescape())
 
     # TODO: top-level pages nav
-    pages = content_dir.walk()
-    for path, dirs, files in pages:
+    pages = []
+    paths = {}
+    dir = content_dir.walk()
+    for path, dirs, files in dir:
         for dir in dirs:
             main_out.joinpath(dir).mkdir(exist_ok=True)
 
@@ -51,8 +53,6 @@ if __name__ == "__main__":
             template = input.with_suffix(".j2")
             vars = input.with_suffix(".json")
 
-            print(f"Generating {output.name}")
-
             page_vars = {}
             if vars.is_file():
                 with open(vars, "r", encoding="utf-8") as file:
@@ -61,7 +61,7 @@ if __name__ == "__main__":
             if "template" in page_vars:
                 template = page_vars.pop("template")
             elif template.is_file():
-                template = template.relative_to(content_dir)
+                template = str(template.relative_to(content_dir))
             else:
                 template = default_template
 
@@ -69,6 +69,39 @@ if __name__ == "__main__":
             all_vars.update(site_vars)
             all_vars.update(page_vars)
 
-            page = sitegen.Page(content=content, template=str(template), env=env, **all_vars)
-            with open(output, "w", encoding="utf-8") as file:
-                file.write(page.text)
+            if input.stem == "index":
+                parent = input.parent
+                if parent != content_dir:
+                    index = parent.relative_to(content_dir)
+                    print(f"Found index: {index}")
+                    paths[index] = {
+                        "href": f"/{index}",
+                        "title": all_vars["title"],
+                    }
+            else:
+                print(f"Found page: {input.name}")
+
+            page = {}
+            page["input"] = input
+            page["content"] = content
+            page["output"] = output
+            page["template"] = template
+            page["vars"] = all_vars
+
+            pages.append(page)
+
+    for page in pages:
+        page["vars"]["path"] = []
+        if page["input"].stem != "index":
+            iter = reversed(page["input"].relative_to(content_dir).parents)
+            next(iter)
+            for parent in iter:
+                page["vars"]["path"].append(paths[parent])
+
+        name = page["output"].name
+        print(f"Generating {name}")
+        print()
+
+        genpage = sitegen.Page(content=page["content"], template=page["template"], env=env, **page["vars"])
+        with open(page["output"], "w", encoding="utf-8") as file:
+            file.write(genpage.text)
