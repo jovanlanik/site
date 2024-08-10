@@ -26,9 +26,14 @@ if __name__ == "__main__":
 
     default_template = site_vars.pop("template")
 
-    env = Environment(loader=FileSystemLoader([content_dir, template_dir]), autoescape=select_autoescape())
+    env = Environment(
+            loader=FileSystemLoader([content_dir, template_dir]),
+            autoescape=select_autoescape(),
+            trim_blocks=True,
+            lstrip_blocks=True,
+    )
 
-    # TODO: top-level pages nav
+    nav = []
     pages = []
     paths = {}
     dir = content_dir.walk()
@@ -65,21 +70,39 @@ if __name__ == "__main__":
             else:
                 template = default_template
 
-            all_vars = {}
+            all_vars = {"hide": "False", "priority": 0}
             all_vars.update(site_vars)
             all_vars.update(page_vars)
 
-            if input.stem == "index":
-                parent = input.parent
-                if parent != content_dir:
-                    index = parent.relative_to(content_dir)
+            parent = input.parent
+            if input.stem == "index" and parent != content_dir:
+                index = parent.relative_to(content_dir)
+                paths[index] = {
+                    "href": f"/{index}",
+                    "title": all_vars["title"],
+                }
+                if parent.parent != content_dir:
                     print(f"Found index: {index}")
-                    paths[index] = {
-                        "href": f"/{index}",
-                        "title": all_vars["title"],
-                    }
+                else:
+                    print(f"Found top-level index: {index}")
+                    if all_vars["hide"] == "False":
+                        nav.append({
+                            "href": f"/{index}",
+                            "title": all_vars["title"],
+                            "priority": all_vars["priority"]
+                        })
             else:
-                print(f"Found page: {input.name}")
+                if parent != content_dir:
+                    print(f"Found page: {input.name}")
+                else:
+                    print(f"Found top-level page: {input.name}")
+                    if all_vars["hide"] == "False":
+                        top = input.relative_to(content_dir)
+                        nav.append({
+                            "href": f"/{top}",
+                            "title": all_vars["title"],
+                            "priority": all_vars["priority"]
+                        })
 
             page = {}
             page["input"] = input
@@ -91,6 +114,7 @@ if __name__ == "__main__":
             pages.append(page)
 
     for page in pages:
+        page["vars"]["nav"] = nav
         page["vars"]["path"] = []
         if page["input"].stem != "index":
             iter = reversed(page["input"].relative_to(content_dir).parents)
@@ -100,7 +124,6 @@ if __name__ == "__main__":
 
         name = page["output"].name
         print(f"Generating {name}")
-        print()
 
         genpage = sitegen.Page(content=page["content"], template=page["template"], env=env, **page["vars"])
         with open(page["output"], "w", encoding="utf-8") as file:

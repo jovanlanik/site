@@ -17,9 +17,9 @@
 				<h1>{{ site }}</h1>
 			</div>
 			<nav>
-				<a href="/">Homepage</a>
-				<a href="/projects.html">Projects</a>
-				<a href="/friends.html">Friends</a>
+				{% for item in nav|sort(attribute='priority') %}
+					<a href="{{ item.href }}">{{ item.title }}</a>
+				{% endfor %}
 			</nav>
 		</header>
 		<hr>
