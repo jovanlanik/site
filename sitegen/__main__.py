@@ -1,6 +1,8 @@
 # sitegen
 # Copyright (c) 2024 Jovan Lanik
 
+# Example cmdline interface to sitegen
+
 import sitegen
 import argparse
 import json

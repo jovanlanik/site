@@ -4,13 +4,13 @@
 
 import json
 import shutil
-from pathlib import Path
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+import pathlib
+import jinja2
 
 import sitegen
 
 if __name__ == "__main__":
-    main_dir = Path.cwd()
+    main_dir = pathlib.Path.cwd()
 
     static_dir = main_dir.joinpath("static")
     content_dir = main_dir.joinpath("content")
@@ -26,9 +26,9 @@ if __name__ == "__main__":
 
     default_template = site_vars.pop("template")
 
-    env = Environment(
-            loader=FileSystemLoader([content_dir, template_dir]),
-            autoescape=select_autoescape(),
+    env = jinja2.Environment(
+            loader=jinja2.FileSystemLoader([content_dir, template_dir]),
+            autoescape=jinja2.select_autoescape(),
             trim_blocks=True,
             lstrip_blocks=True,
     )

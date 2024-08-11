@@ -2,8 +2,8 @@
 # Copyright (c) 2024 Jovan Lanik
 
 import markdown
-from pathlib import Path
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+import pathlib
+import jinja2
 
 
 def PathContentLoader(path, encoding="utf-8", **kwargs):
@@ -19,17 +19,13 @@ def ContentLoader(text):
     return text
 
 
-class Content:
-    pass
-
-
-class HTMLContent(Content):
+class HTMLContent:
     def __init__(self, loader=ContentLoader, *args, **kwargs):
         self.text = loader(*args, **kwargs)
         self.html = self.text
 
 
-class MarkdownContent(Content):
+class MarkdownContent:
     def __init__(self, loader=ContentLoader, *args, **kwargs):
         self.text = loader(*args, **kwargs)
         self.html = markdown.markdown(self.text)
@@ -37,13 +33,11 @@ class MarkdownContent(Content):
 
 class Page:
     def __init__(self, content, template, env=None, **kwargs):
-        opt = {
-                'loader': FileSystemLoader(searchpath=Path.cwd()),
-                'autoescape': select_autoescape()
-        }
-
         if env is None:
-            self.env = Environment(**opt)
+            self.env = jinja2.Environment(
+                loader=jinja2.FileSystemLoader(searchpath=pathlib.Path.cwd()),
+                autoescape=jinja2.select_autoescape(),
+            )
         else:
             self.env = env.overlay()
 
