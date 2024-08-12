@@ -12,7 +12,23 @@
 	</head>
 	<body>
 		{% block side_a %}
-			<aside id="side-a">Side A</aside>
+			<aside id="side-a">
+				<div class="label">Side<br>A</div>
+				<div class="badges">
+					<a href="https://kernel.org/">
+						<img class="badge" src="/badges/linux.png" alt="Linux powered">
+					</a>
+					<a href="https://voidlinux.org/">
+						<img class="badge" src="/badges/void.png" alt="Powered by Void">
+					</a>
+					<a href="https://neovim.io/">
+						<img class="badge" src="/badges/vim.png" alt="Edited with Vim">
+					</a>
+					<a href="https://www.mozilla.org/cs/firefox/">
+						<img class="badge" src="/badges/firefox.png" alt="Get Firefox">
+					</a>
+				</div>
+			</aside>
 		{% endblock %}
 		<div id="middle">
 			<header>
@@ -45,7 +61,20 @@
 			</footer>
 		</div>
 		{% block side_b %}
-			<aside id="side-b">Side B</aside>
+			<aside id="side-b">
+				<div class="label">Side<br>B</div>
+				<div class="badges">
+					<a href="https://html5.validator.nu/?doc=https%3A%2F%2Flanikjo.neocities.org%2F">
+						<img class="badge" src="/badges/html5-validator-badge-blue.svg" alt="HTML5 Valid">
+					</a>
+					<a href="https://jigsaw.w3.org/css-validator/check/referer">
+						<img class="badge" src="https://www.w3.org/Icons/valid-css-blue-v.svg" alt="Valid CSS!">
+					</a>
+					<a href="https://neocities.org/">
+						<img class="badge" src="/badges/neocities.png" alt="hosted by neocities">
+					</a>
+				</div>
+			</aside>
 		{% endblock %}
 	</body>
 </html>
