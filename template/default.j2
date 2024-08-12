@@ -26,14 +26,14 @@
 					{% endfor %}
 				</nav>
 			</header>
-			<hr>
 			<main>
+				<hr>
 				{% block main %}
 					{{ content }}
 				{% endblock %}
 			</main>
-			<hr>
 			<footer>
+				<hr>
 				{% block badges %}
 					{% if under_construction == "True" %}
 						<img alt="" src="/construction.svg">
