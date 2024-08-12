@@ -11,33 +11,41 @@
 		{% endblock %}
 	</head>
 	<body>
-		<header>
-			<div id="top">
-				<img alt="" src="/favicon.svg">
-				<h1>{{ site }}</h1>
-			</div>
-			<nav>
-				{% for item in nav|sort(attribute='priority') %}
-					<a href="{{ item.href }}">{{ item.title }}</a>
-				{% endfor %}
-			</nav>
-		</header>
-		<hr>
-		<main>
-			{% block main %}
-				{{ content }}
-			{% endblock %}
-		</main>
-		<hr>
-		<footer>
-			{% block badges %}
-				{% if under_construction == "True" %}
-					<img alt="" src="/construction.svg">
-				{% endif %}
-			{% endblock %}
-			{% block footer %}
-				<p>{{ copyright }}</p>
-			{% endblock %}
-		</footer>
+		{% block side_a %}
+			<aside id="side-a">Side A</aside>
+		{% endblock %}
+		<div id="middle">
+			<header>
+				<div id="top">
+					<img alt="" src="/favicon.svg">
+					<h1>{{ site }}</h1>
+				</div>
+				<nav>
+					{% for item in nav|sort(attribute='priority') %}
+						<a href="{{ item.href }}">{{ item.title }}</a>
+					{% endfor %}
+				</nav>
+			</header>
+			<hr>
+			<main>
+				{% block main %}
+					{{ content }}
+				{% endblock %}
+			</main>
+			<hr>
+			<footer>
+				{% block badges %}
+					{% if under_construction == "True" %}
+						<img alt="" src="/construction.svg">
+					{% endif %}
+				{% endblock %}
+				{% block footer %}
+					<p>{{ copyright }}</p>
+				{% endblock %}
+			</footer>
+		</div>
+		{% block side_b %}
+			<aside id="side-b">Side B</aside>
+		{% endblock %}
 	</body>
 </html>

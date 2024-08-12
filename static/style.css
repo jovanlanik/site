@@ -1,9 +1,49 @@
 body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: "Sans";
+	display: flex;
+	justify-content: center;
+	container-type: inline-size;
+	background-image: url("/background.png");
+}
+
+#side-a, #side-b {
+	user-select: none;
+	position: sticky;
+	top: 0;
+	padding-top: 40px;
+	font-size: 9.5cqw;
+	align-self: start;
+	font-weight: bold;
+	text-transform: uppercase;
+	white-space: nowrap;
+	height: 100%;
+	text-orientation: mixed;
+	background: rgba(0.0, 0.0, 0.0, 0.25);
+	color: #f5f5f5;
+}
+
+#side-a {
+	text-align: end;
+	writing-mode: sideways-lr;
+}
+
+#side-b {
+	writing-mode: vertical-rl;
+}
+
+@media only screen and (max-width: 1000px) {
+	#side-a, #side-b {
+		display: none;
+	}
+}
+
+#middle {
+	flex-grow: 1;
 	background-color: #f5f5f5;
 	color: #0c0c0c;
-	font-family: "Sans";
 	max-width: 720px;
-	margin: auto;
 	padding: 0 16px;
 }
 
