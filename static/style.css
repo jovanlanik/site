@@ -9,6 +9,7 @@ body {
 }
 
 #side-a, #side-b {
+	display: none;
 	user-select: none;
 	position: sticky;
 	top: 0;
