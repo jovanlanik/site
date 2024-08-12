@@ -1,5 +1,5 @@
 {
 	"title": "Not Found",
-	"under_construction": "False",
-	"hide": "True"
+	"under_construction": false,
+	"hide": true
 }

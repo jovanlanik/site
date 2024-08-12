@@ -3,5 +3,5 @@
 	"site_short": "Jovan's site",
 	"copyright": "Copyright (c) 2024 Jovan Lanik",
 	"template": "default.j2",
-	"under_construction": "True"
+	"under_construction": true
 }

@@ -70,7 +70,7 @@ if __name__ == "__main__":
             else:
                 template = default_template
 
-            all_vars = {"hide": "False", "priority": 0}
+            all_vars = {"hide": False, "priority": 0}
             all_vars.update(site_vars)
             all_vars.update(page_vars)
 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
                 else:
                     top = True
                     print(f"Found top-level index: {index}")
-                    if all_vars["hide"] == "False":
+                    if all_vars["hide"] is False:
                         nav.append({
                             "href": f"/{index}",
                             "title": all_vars["title"],
@@ -99,7 +99,7 @@ if __name__ == "__main__":
                 else:
                     top = True
                     print(f"Found top-level page: {input.name}")
-                    if all_vars["hide"] == "False":
+                    if all_vars["hide"] is False:
                         top = input.relative_to(content_dir)
                         nav.append({
                             "href": f"/{top}",
@@ -113,14 +113,14 @@ if __name__ == "__main__":
             page["output"] = output
             page["template"] = template
             page["vars"] = all_vars
-            page["top"] = str(top)
+            page["top"] = top
 
             pages.append(page)
 
     for page in pages:
         page["vars"]["nav"] = nav
         page["vars"]["path"] = []
-        if page["top"] == "False":
+        if page["top"] is False:
             parents = list(page["input"].relative_to(content_dir).parents)
             parents.reverse()
             parents.pop(0)

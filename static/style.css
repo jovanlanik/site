@@ -86,3 +86,9 @@ pre {
 #top > img {
 	margin: 8px;
 }
+
+.deco {
+	user-drag: none;
+	user-select: none;
+	pointer-events: none;
+}

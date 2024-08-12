@@ -17,7 +17,7 @@
 		<div id="middle">
 			<header>
 				<div id="top">
-					<img alt="" src="/favicon.svg">
+					<img class="deco" alt="" src="/favicon.svg">
 					<h1>{{ site }}</h1>
 				</div>
 				<nav>
@@ -35,8 +35,8 @@
 			<footer>
 				<hr>
 				{% block badges %}
-					{% if under_construction == "True" %}
-						<img alt="" src="/construction.svg">
+					{% if under_construction == True %}
+						<img class="deco" alt="" src="/construction.svg">
 					{% endif %}
 				{% endblock %}
 				{% block footer %}
