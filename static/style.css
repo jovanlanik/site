@@ -3,6 +3,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
+	background-color: #731719;
 	background-image: url("/background.png");
 	font-family: "Sans";
 }
