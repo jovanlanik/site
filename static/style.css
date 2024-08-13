@@ -28,10 +28,8 @@ body {
 }
 
 #side-a .badges, #side-b .badges {
-	flex-grow: 1;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: start;
 	justify-content: center;
 	gap: 4px;
 }
@@ -45,6 +43,10 @@ a:has(.badge) {
 	height:31px;
 }
 
+.badge:not([src$=".svg"]) {
+	image-rendering: pixelated;
+}
+
 #side-a .label, #side-b .label {
 	font-size: 50cqw;
 	user-select: none;
@@ -54,8 +56,16 @@ a:has(.badge) {
 	line-height: 1;
 	text-align: end;
 	text-orientation: mixed;
-	writing-mode: sideways-lr;
+	writing-mode: vertical-rl; 
+  	transform: rotate(180deg);
 	color: #e5e5e5;
+}
+
+@supports (writing-mode: sideways-lr) {
+	#side-a .label, #side-b .label {
+		writing-mode: sideways-lr;
+		transform: none;
+	}
 }
 
 #middle {
