@@ -137,6 +137,10 @@ pre {
 	margin: 8px;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .deco {
 	user-drag: none;
 	user-select: none;
