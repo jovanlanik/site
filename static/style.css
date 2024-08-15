@@ -14,6 +14,7 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 	background: rgba(0.0, 0.0, 0.0, 0.25);
+	color: #e5e5e5;
 	padding: 8px;
 	padding-top: 16px;
 	display: flex;
@@ -58,7 +59,6 @@ a:has(.badge) {
 	text-orientation: mixed;
 	writing-mode: vertical-rl; 
   	transform: rotate(180deg);
-	color: #e5e5e5;
 }
 
 @supports (writing-mode: sideways-lr) {
@@ -114,6 +114,7 @@ pre {
 }
 
 hr {
+	width: 100%;
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
 	box-sizing: border-box;
