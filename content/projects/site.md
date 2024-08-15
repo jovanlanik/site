@@ -5,7 +5,7 @@ I try to create most graphics for the site on my own but some are
 ### sitegen
 A very simple (and limited) python tool for generating static websites.
 All the heavy lifting is done by the
-[Jinja2](https://jinja.palletsprojects.com/en/3.1.x/") and
+[Jinja2](https://jinja.palletsprojects.com/en/3.1.x/) and
 [Markdown](https://python-markdown.github.io/) libraries.
 It shares the git repo with site content.
 ### Links
