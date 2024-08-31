@@ -6,10 +6,12 @@ import json
 import shutil
 import pathlib
 import jinja2
+import argparse
 
 import sitegen
 
-if __name__ == "__main__":
+
+def generate(args):
     main_dir = pathlib.Path.cwd()
 
     static_dir = main_dir.joinpath("static")
@@ -21,10 +23,7 @@ if __name__ == "__main__":
     # copy static files
     shutil.copytree(static_dir, main_out, dirs_exist_ok=True)
 
-    with open(main_dir.joinpath("site.json"), "r", encoding="utf-8") as file:
-        site_vars = json.loads(file.read())
-
-    default_template = site_vars.pop("template")
+    default_template = arg_vars.pop("template")
 
     env = jinja2.Environment(
             loader=jinja2.FileSystemLoader([content_dir, template_dir]),
@@ -45,14 +44,16 @@ if __name__ == "__main__":
             input = path / file
 
             if input.suffix == ".md":
-                content = sitegen.MarkdownContent(sitegen.PathContentLoader, input)
+                type = sitegen.ContentType.Markdown
             elif input.suffix == ".html":
-                content = sitegen.HTMLContent(sitegen.PathContentLoader, input)
+                type = sitegen.ContentType.HTML
             elif input.suffix == ".j2" or input.suffix == ".json":
                 continue
             else:
                 print(f"Unknown file suffix {input.suffix}")
                 continue
+
+            content = sitegen.Content(sitegen.PathLoader(input), type)
 
             output = main_out.joinpath(input.relative_to(content_dir)).with_suffix(".html")
             template = input.with_suffix(".j2")
@@ -71,7 +72,7 @@ if __name__ == "__main__":
                 template = default_template
 
             all_vars = {"hide": False, "priority": 0}
-            all_vars.update(site_vars)
+            all_vars.update(arg_vars)
             all_vars.update(page_vars)
 
             top = False
@@ -135,4 +136,23 @@ if __name__ == "__main__":
 
         genpage = sitegen.Page(content=page["content"], template=page["template"], env=env, **page["vars"])
         with open(page["output"], "w", encoding="utf-8") as file:
-            file.write(genpage.text)
+            file.write(genpage.output)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+            prog="sitegen",
+            description="Static site generator",
+            epilog="Report bugs to <jox969@gmail.com>.",
+    )
+    parser.add_argument("-j", "--json", default="site.json", required=False)
+    parser.add_argument("-J", "--extra-json", required=False)
+    args = parser.parse_args()
+
+    arg_vars = {}
+    with open(args.json, "r", encoding="utf-8") as file:
+        arg_vars.update(json.loads(file.read()))
+    if args.extra_json:
+        arg_vars.update(json.loads(args.extra_json))
+
+    generate(arg_vars)

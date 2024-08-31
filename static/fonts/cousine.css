@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Cousine";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/cousine/Cousine-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Cousine";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/cousine/Cousine-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: "Cousine";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/cousine/Cousine-Italic.ttf");
+}
+
+@font-face {
+	font-family: "Cousine";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/cousine/Cousine-Regular.ttf");
+}

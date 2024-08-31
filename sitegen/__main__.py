@@ -23,10 +23,12 @@ with open(args.json, "r", encoding="utf-8") as file:
     vars = json.loads(file.read())
 
 if pathlib.Path(args.input).suffix == ".md":
-    content = sitegen.MarkdownContent(sitegen.PathContentLoader, args.input)
+    type = sitegen.ContentType.Markdown
 else:
-    content = sitegen.HTMLContent(sitegen.PathContentLoader, args.input)
+    type = sitegen.ContentType.HTML
 
+input = sitegen.PathLoader(args.input)
+content = sitegen.Content(input, type)
 page = sitegen.Page(content, args.template, **vars)
 with open(args.output, "w", encoding="utf-8") as output:
-    output.write(page.text)
+    output.write(page.output)

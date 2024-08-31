@@ -3,5 +3,13 @@
 	"site_short": "Jovan's site",
 	"copyright": "Copyright (c) 2024 Jovan Lanik",
 	"template": "default.j2",
+	"host": {
+		"name": "neocities",
+		"badge": {
+			"href": "https://neocities.org/",
+			"src": "neocities.png",
+			"alt": "Hosted by Neocities"
+		}
+	},
 	"under_construction": true
 }

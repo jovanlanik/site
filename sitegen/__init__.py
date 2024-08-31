@@ -4,31 +4,42 @@
 import markdown
 import pathlib
 import jinja2
+from enum import Enum
+from bs4 import BeautifulSoup
 
 
-def PathContentLoader(path, encoding="utf-8", **kwargs):
-    with open(path, "r", encoding=encoding, **kwargs) as file:
-        return FileContentLoader(file)
-
-
-def FileContentLoader(file):
+def FileLoader(file):
     return file.read()
 
 
-def ContentLoader(text):
-    return text
+def PathLoader(path, encoding="utf-8", **kwargs):
+    with open(path, "r", encoding=encoding, **kwargs) as file:
+        return FileLoader(file)
 
 
-class HTMLContent:
-    def __init__(self, loader=ContentLoader, *args, **kwargs):
-        self.text = loader(*args, **kwargs)
-        self.html = self.text
+class ContentType(Enum):
+    HTML = 0
+    Markdown = 1
 
 
-class MarkdownContent:
-    def __init__(self, loader=ContentLoader, *args, **kwargs):
-        self.text = loader(*args, **kwargs)
-        self.html = markdown.markdown(self.text)
+class Content:
+    def process(self, input):
+        return input
+
+    def format(self, input):
+        soup = BeautifulSoup(input, 'html.parser')
+        return soup.prettify(formatter="html5")
+
+    def __init__(self, input, type=ContentType.HTML):
+        self.input = input
+        if type == ContentType.Markdown:
+            self.original_html = markdown.markdown(self.input)
+            self.processed_html = self.original_html
+        else:
+            self.original_html = self.input
+            self.processed_html = self.process(self.original_html)
+        self.formatted_html = self.format(self.processed_html)
+        self.output = self.formatted_html
 
 
 class Page:
@@ -42,4 +53,4 @@ class Page:
             self.env = env.overlay()
 
         self.template = self.env.get_template(template)
-        self.text = self.template.render(content=content.html, **kwargs)
+        self.output = self.template.render(content=content.output, **kwargs)
