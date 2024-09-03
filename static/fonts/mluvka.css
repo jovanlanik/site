@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Mluvka";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("/fonts/mluvka/Mluvka-ExtraBold.otf");
+}
+@font-face {
+	font-family: "Mluvka";
+	font-style: italic;
+	font-weight: 800;
+	font-display: swap;
+	src: url("/fonts/mluvka/Mluvka-ExtraBoldItalic.otf");
+}

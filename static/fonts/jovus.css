@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Jovus Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/jovus/JovusSans-Bold.ttf");
+}
+@font-face {
+	font-family: "Jovus Sans";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/jovus/JovusSans-BoldItalic.ttf");
+}
+@font-face {
+	font-family: "Jovus Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/jovus/JovusSans-Regular.ttf");
+}
+@font-face {
+	font-family: "Jovus Sans";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/jovus/JovusSans-Italic.ttf");
+}

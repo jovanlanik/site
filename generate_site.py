@@ -20,6 +20,8 @@ def generate(args):
 
     main_out = main_dir.joinpath("deploy")
 
+    shutil.rmtree(main_out)
+
     # copy static files
     shutil.copytree(static_dir, main_out, dirs_exist_ok=True)
 
@@ -141,7 +143,7 @@ def generate(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-            prog="sitegen",
+            prog="generate_site",
             description="Static site generator",
             epilog="Report bugs to <jox969@gmail.com>.",
     )

@@ -1,20 +1,6 @@
 @font-face {
 	font-family: "Rubik";
 	font-style: normal;
-	font-weight: 800;
-	font-display: swap;
-	src: url("/fonts/rubik/Rubik-ExtraBold.ttf");
-}
-@font-face {
-	font-family: "Rubik";
-	font-style: italic;
-	font-weight: 800;
-	font-display: swap;
-	src: url("/fonts/rubik/Rubik-ExtraBoldItalic.ttf");
-}
-@font-face {
-	font-family: "Rubik";
-	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
 	src: url("/fonts/rubik/Rubik-Bold.ttf");

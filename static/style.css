@@ -1,8 +1,8 @@
-@import url("/fonts/rubik.css");
+@import url("/fonts/jovus.css");
 @import url("/fonts/cousine.css");
 
 :root {
-	font-family: "Rubik", sans-serif;
+	font-family: "Jovus Sans", sans-serif;
 	/*
 	font-optical-sizing: auto;
 	font-synthesis: none;
@@ -150,7 +150,7 @@ a:has(.badge) {
 }
 
 h1, h2 {
-	font-weight: 800;
+	font-weight: 700;
 }
 
 a {
