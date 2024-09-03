@@ -20,7 +20,7 @@ def generate(args):
 
     main_out = main_dir.joinpath("deploy")
 
-    shutil.rmtree(main_out)
+    shutil.rmtree(main_out, ignore_errors=True)
 
     # copy static files
     shutil.copytree(static_dir, main_out, dirs_exist_ok=True)
