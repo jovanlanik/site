@@ -150,7 +150,8 @@ a:has(.badge) {
 }
 
 h1, h2 {
-	font-weight: 700;
+	font-family: "Jovus Display", sans-serif;
+	font-weight: 800;
 }
 
 a {

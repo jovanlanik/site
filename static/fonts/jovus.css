@@ -3,26 +3,33 @@
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
-	src: url("/fonts/jovus/JovusSans-Bold.ttf");
+	src: url("/fonts/jovus/JovusSans-Bold.otf");
 }
 @font-face {
 	font-family: "Jovus Sans";
 	font-style: italic;
 	font-weight: 700;
 	font-display: swap;
-	src: url("/fonts/jovus/JovusSans-BoldItalic.ttf");
+	src: url("/fonts/jovus/JovusSans-BoldItalic.otf");
 }
 @font-face {
 	font-family: "Jovus Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("/fonts/jovus/JovusSans-Regular.ttf");
+	src: url("/fonts/jovus/JovusSans-Regular.otf");
 }
 @font-face {
 	font-family: "Jovus Sans";
 	font-style: italic;
 	font-weight: 400;
 	font-display: swap;
-	src: url("/fonts/jovus/JovusSans-Italic.ttf");
+	src: url("/fonts/jovus/JovusSans-Italic.otf");
+}
+@font-face {
+	font-family: "Jovus Display";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("/fonts/jovus/JovusDisplay-Bold.otf");
 }
