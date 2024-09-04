@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1500564625
-ModificationTime: 1725396377
+ModificationTime: 1725467513
 PfmFamily: 81
 TTFWeight: 700
 TTFWidth: 5
@@ -118,7 +118,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 114 19 15
+WinInfo: 0 19 7
 BeginPrivate: 4
 BlueValues 31 [-23 0 540 549 729 741 709 724]
 StdHW 5 [113]
@@ -147,17 +147,17 @@ StartChar: exclam
 Encoding: 33 33 2
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 146<143 262 112 293>
 LayerCount: 2
 Fore
 SplineSet
 417 726 m 1
- 372 516 l 1
- 265 207 l 1
- 198 207 l 1
- 222 516 l 1
- 267 726 l 1
+ 417 726 400.104492188 620 377.104492188 540 c 24
+ 341.104492188 418 285 207 285 207 c 1
+ 178 207 l 1
+ 178 207 211.104492188 420 227.104492188 540 c 24
+ 238.104492188 623 267 726 267 726 c 1
  417 726 l 1
 293 146 m 1
  262 0 l 1
@@ -172,23 +172,19 @@ StartChar: quotedbl
 Encoding: 34 34 3
 Width: 474
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 470 259<205 246 190 343 205 426 441 482>
 LayerCount: 2
 Fore
 SplineSet
 343 729 m 1
- 315 599 l 1
- 246 470 l 1
- 190 470 l 1
- 177 599 l 1
+ 266 470 l 1
+ 170 470 l 1
  205 729 l 1
  343 729 l 1
 579 729 m 1
- 551 599 l 1
- 482 470 l 1
- 426 470 l 1
- 413 599 l 1
+ 502 470 l 1
+ 406 470 l 1
  441 729 l 1
  579 729 l 1
 EndSplineSet
@@ -552,16 +548,16 @@ StartChar: slash
 Encoding: 47 47 16
 Width: 278
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -14 20
 LayerCount: 2
 Fore
 SplineSet
-360 714 m 1
- 427 714 l 1
- 66 -14 l 1
- -1 -14 l 1
- 360 714 l 1
+344 714 m 1
+ 444 714 l 1
+ 83 -14 l 1
+ -17 -14 l 1
+ 344 714 l 1
 EndSplineSet
 Kerns2: 110 43 "'kern' Horizontal Kerning lookup 0 subtable" 109 43 "'kern' Horizontal Kerning lookup 0 subtable" 90 11 "'kern' Horizontal Kerning lookup 0 subtable" 85 27 "'kern' Horizontal Kerning lookup 0 subtable" 77 29 "'kern' Horizontal Kerning lookup 0 subtable" 76 33 "'kern' Horizontal Kerning lookup 0 subtable" 75 27 "'kern' Horizontal Kerning lookup 0 subtable" 74 29 "'kern' Horizontal Kerning lookup 0 subtable" 73 29 "'kern' Horizontal Kerning lookup 0 subtable" 72 28 "'kern' Horizontal Kerning lookup 0 subtable" 71 28 "'kern' Horizontal Kerning lookup 0 subtable" 67 33 "'kern' Horizontal Kerning lookup 0 subtable" 59 20 "'kern' Horizontal Kerning lookup 0 subtable" 58 8 "'kern' Horizontal Kerning lookup 0 subtable" 57 12 "'kern' Horizontal Kerning lookup 0 subtable" 56 31 "'kern' Horizontal Kerning lookup 0 subtable" 55 17 "'kern' Horizontal Kerning lookup 0 subtable" 54 38 "'kern' Horizontal Kerning lookup 0 subtable" 53 20 "'kern' Horizontal Kerning lookup 0 subtable" 51 38 "'kern' Horizontal Kerning lookup 0 subtable" 47 44 "'kern' Horizontal Kerning lookup 0 subtable" 46 45 "'kern' Horizontal Kerning lookup 0 subtable" 45 38 "'kern' Horizontal Kerning lookup 0 subtable" 44 41 "'kern' Horizontal Kerning lookup 0 subtable" 43 6 "'kern' Horizontal Kerning lookup 0 subtable" 42 47 "'kern' Horizontal Kerning lookup 0 subtable" 41 44 "'kern' Horizontal Kerning lookup 0 subtable" 39 41 "'kern' Horizontal Kerning lookup 0 subtable" 38 39 "'kern' Horizontal Kerning lookup 0 subtable" 37 40 "'kern' Horizontal Kerning lookup 0 subtable" 35 37 "'kern' Horizontal Kerning lookup 0 subtable" 16 24 "'kern' Horizontal Kerning lookup 0 subtable"
 Substitution2: "'dnom' Denominators lookup 4 subtable" fraction
@@ -1821,15 +1817,15 @@ StartChar: backslash
 Encoding: 92 92 61
 Width: 278
 GlyphClass: 1
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-138 709 m 1
- 212 709 l 1
- 285 -23 l 1
- 210 -23 l 1
- 138 709 l 1
+121 709 m 1
+ 228 709 l 1
+ 301 -23 l 1
+ 193 -23 l 1
+ 121 709 l 1
 EndSplineSet
 Kerns2: 207 63 "'kern' Horizontal Kerning lookup 0 subtable" 110 45 "'kern' Horizontal Kerning lookup 0 subtable" 109 45 "'kern' Horizontal Kerning lookup 0 subtable" 77 56 "'kern' Horizontal Kerning lookup 0 subtable" 75 51 "'kern' Horizontal Kerning lookup 0 subtable" 74 56 "'kern' Horizontal Kerning lookup 0 subtable" 72 52 "'kern' Horizontal Kerning lookup 0 subtable" 71 50 "'kern' Horizontal Kerning lookup 0 subtable" 69 56 "'kern' Horizontal Kerning lookup 0 subtable" 59 29 "'kern' Horizontal Kerning lookup 0 subtable" 58 -20 "'kern' Horizontal Kerning lookup 0 subtable" 57 18 "'kern' Horizontal Kerning lookup 0 subtable" 56 16 "'kern' Horizontal Kerning lookup 0 subtable" 54 36 "'kern' Horizontal Kerning lookup 0 subtable" 53 -22 "'kern' Horizontal Kerning lookup 0 subtable" 52 43 "'kern' Horizontal Kerning lookup 0 subtable" 51 44 "'kern' Horizontal Kerning lookup 0 subtable" 50 35 "'kern' Horizontal Kerning lookup 0 subtable" 49 46 "'kern' Horizontal Kerning lookup 0 subtable" 48 37 "'kern' Horizontal Kerning lookup 0 subtable" 47 50 "'kern' Horizontal Kerning lookup 0 subtable" 46 51 "'kern' Horizontal Kerning lookup 0 subtable" 45 44 "'kern' Horizontal Kerning lookup 0 subtable" 44 47 "'kern' Horizontal Kerning lookup 0 subtable" 43 22 "'kern' Horizontal Kerning lookup 0 subtable" 42 52 "'kern' Horizontal Kerning lookup 0 subtable" 41 50 "'kern' Horizontal Kerning lookup 0 subtable" 40 36 "'kern' Horizontal Kerning lookup 0 subtable" 37 45 "'kern' Horizontal Kerning lookup 0 subtable" 36 39 "'kern' Horizontal Kerning lookup 0 subtable" 35 43 "'kern' Horizontal Kerning lookup 0 subtable" 34 18 "'kern' Horizontal Kerning lookup 0 subtable"
 EndChar
@@ -2495,7 +2491,7 @@ StartChar: t
 Encoding: 116 116 85
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 20 436 93<127 176 107 196 336 394>
 VStem: 101 147<35 110>
 LayerCount: 2
@@ -2514,9 +2510,8 @@ SplineSet
  101 76 103 90 106 104 c 2
  176 436 l 1
  107 436 l 1
- 127 529 l 1
- 196 529 l 1
- 227 674 l 1
+ 127 529 l 5
+ 197 534 205 539 227 674 c 5
  367 674 l 1
  336 529 l 1
  414 529 l 1
@@ -2725,16 +2720,16 @@ StartChar: bar
 Encoding: 124 124 93
 Width: 280
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 709 20<255 335 335 335>
 LayerCount: 2
 Fore
 SplineSet
-335 729 m 1
- 137 -200 l 1
- 57 -200 l 1
- 255 729 l 1
- 335 729 l 1
+345 729 m 1
+ 147 -200 l 1
+ 47 -200 l 5
+ 245 729 l 5
+ 345 729 l 1
 EndSplineSet
 EndChar
 
@@ -2809,17 +2804,17 @@ StartChar: exclamdown
 Encoding: 161 161 96
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 394 146<150 331 181 300>
 LayerCount: 2
 Fore
 SplineSet
 26 -186 m 1
- 71 24 l 1
- 178 333 l 1
- 245 333 l 1
- 221 24 l 1
- 176 -186 l 1
+ 26 -186 48 -56 71 24 c 24
+ 107 146 158 333 158 333 c 1
+ 265 333 l 1
+ 265 333 237 144 221 24 c 24
+ 210 -59 176 -186 176 -186 c 1
  26 -186 l 1
 150 394 m 1
  181 540 l 1
@@ -3088,16 +3083,14 @@ StartChar: quotesingle
 Encoding: 39 39 104
 Width: 238
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 470 259<205 245 190 343>
 LayerCount: 2
 Fore
 SplineSet
 343 729 m 1
- 315 599 l 1
- 245 470 l 1
- 190 470 l 1
- 177 599 l 1
+ 265 470 l 1
+ 170 470 l 1
  205 729 l 1
  343 729 l 1
 EndSplineSet
@@ -4668,21 +4661,21 @@ StartChar: brokenbar
 Encoding: 166 166 160
 Width: 280
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 709 20<255 335 335 335>
 LayerCount: 2
 Fore
 SplineSet
-335 729 m 1
- 252 340 l 1
- 172 340 l 1
- 255 729 l 1
- 335 729 l 1
-220 189 m 1
- 137 -200 l 1
- 57 -200 l 1
- 140 189 l 1
- 220 189 l 1
+345 729 m 1
+ 262 340 l 1
+ 162 340 l 1
+ 245 729 l 1
+ 345 729 l 1
+230 189 m 1
+ 147 -200 l 1
+ 47 -200 l 1
+ 130 189 l 1
+ 230 189 l 1
 EndSplineSet
 EndChar
 
@@ -10372,13 +10365,15 @@ StartChar: tcaron
 Encoding: 357 357 319
 Width: 389
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 20 436 93<127 176 107 196 336 394> 717 112<456 499 432 577>
 VStem: 101 147<35 110>
 LayerCount: 2
 Fore
 SplineSet
-414 529 m 1
+367 674 m 5
+ 336 529 l 1
+ 414 529 l 1
  394 436 l 1
  316 436 l 1
  254 142 l 2
@@ -10392,11 +10387,8 @@ SplineSet
  176 436 l 1
  107 436 l 1
  127 529 l 1
- 196 529 l 1
- 227 674 l 1
- 367 674 l 1
- 336 529 l 1
- 414 529 l 1
+ 197 534 205 539 227 674 c 5
+ 367 674 l 5
 456 829 m 1
  577 829 l 1
  557 733 l 1
@@ -10584,13 +10576,15 @@ StartChar: uni021B
 Encoding: 539 539 325
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -172 112<114 157 90 236> -23 20 436 93<126 176 107 196 336 394>
 VStem: 101 147<35 110.5>
 LayerCount: 2
 Fore
 SplineSet
-414 529 m 1
+367 674 m 1
+ 336 529 l 1
+ 414 529 l 1
  394 436 l 1
  316 436 l 1
  253 142 l 2
@@ -10603,12 +10597,9 @@ SplineSet
  101 77 102 90 106 104 c 2
  176 436 l 1
  107 436 l 1
- 126 529 l 1
- 196 529 l 1
- 227 674 l 1
+ 127 529 l 1
+ 197 534 205 539 227 674 c 1
  367 674 l 1
- 336 529 l 1
- 414 529 l 1
 114 -60 m 1
  236 -60 l 1
  215 -156 l 1
@@ -12203,13 +12194,24 @@ StartChar: tcommaaccent
 Encoding: 355 355 372
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -220 50<101.5 135 101.5 165.5> -23 20 436 93<127 176 107 196 336 394>
 VStem: 101 147<46 110> 183 87<-138 -115.5>
 LayerCount: 2
 Fore
 SplineSet
-190 -22 m 1xf0
+367 674 m 1
+ 336 529 l 1
+ 414 529 l 1
+ 394 436 l 1
+ 316 436 l 1
+ 254 142 l 2
+ 250 125 248 112 248 108 c 0
+ 248 92 262 83 286 83 c 0
+ 297 83 305 84 319 86 c 1
+ 299 -12 l 1
+ 271 -20 247 -23 216 -23 c 0
+ 206 -23 199 -23 190 -22 c 1xf0
  163 -62 l 1
  179 -58 191 -56 206 -56 c 0
  246 -56 270 -77 270 -113 c 0
@@ -12226,20 +12228,8 @@ SplineSet
  176 436 l 1
  107 436 l 1
  127 529 l 1
- 196 529 l 1
- 227 674 l 1
+ 197 534 205 539 227 674 c 1
  367 674 l 1
- 336 529 l 1
- 414 529 l 1
- 394 436 l 1
- 316 436 l 1
- 254 142 l 2
- 250 125 248 112 248 108 c 0
- 248 92 262 83 286 83 c 0
- 297 83 305 84 319 86 c 1
- 299 -12 l 1
- 271 -20 247 -23 216 -23 c 0
- 206 -23 199 -23 190 -22 c 1xf0
 EndSplineSet
 EndChar
 
@@ -12500,13 +12490,15 @@ StartChar: tbar
 Encoding: 359 359 380
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 20 273 67<96 141 82 156 296 353> 436 93<126 176 107 196 336 394>
 VStem: 101 147<35 110.5>
 LayerCount: 2
 Fore
 SplineSet
-414 529 m 1
+367 674 m 1
+ 336 529 l 1
+ 414 529 l 1
  394 436 l 1
  316 436 l 1
  296 340 l 1
@@ -12527,12 +12519,9 @@ SplineSet
  156 340 l 1
  176 436 l 1
  107 436 l 1
- 126 529 l 1
- 196 529 l 1
- 227 674 l 1
+ 127 529 l 1
+ 197 534 205 539 227 674 c 1
  367 674 l 1
- 336 529 l 1
- 414 529 l 1
 EndSplineSet
 EndChar
 
@@ -18427,15 +18416,13 @@ StartChar: tonos
 Encoding: 900 900 586
 Width: 333
 GlyphClass: 1
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet
 385 789 m 1
- 364 689 l 1
- 310 590 l 1
- 271 590 l 1
- 262 689 l 1
+ 330 590 l 1
+ 251 590 l 5
  283 789 l 1
  385 789 l 1
 EndSplineSet
@@ -18445,7 +18432,7 @@ StartChar: dieresistonos
 Encoding: 901 901 587
 Width: 333
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 621 122<176 247 150 273 176 349 375 446> 700 189<304 333 294 406>
 LayerCount: 2
 Fore
@@ -18461,11 +18448,9 @@ SplineSet
  375 743 l 1
  472 743 l 1
 406 889 m 1x40
- 387 799 l 1
  333 700 l 1
- 294 700 l 1
- 285 799 l 1
- 304 889 l 1
+ 294 700 l 5
+ 304 889 l 5
  406 889 l 1x40
 EndSplineSet
 EndChar
@@ -18474,7 +18459,7 @@ StartChar: Alphatonos
 Encoding: 902 902 588
 Width: 722
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 20 147 125<329 518 329 532 260 518> 709 20<214 316 316 316 433 606 606 606>
 LayerCount: 2
 Fore
@@ -18493,10 +18478,8 @@ SplineSet
  329 272 l 1
  518 272 l 1
 316 729 m 1
- 295 629 l 1
- 241 530 l 1
- 202 530 l 1
- 193 629 l 1
+ 261 530 l 1
+ 182 530 l 1
  214 729 l 1
  316 729 l 1
 EndSplineSet
@@ -18507,7 +18490,7 @@ StartChar: Epsilontonos
 Encoding: 904 904 589
 Width: 854
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 125<391 759> 314 125<431 806 458 780> 604 125<493 871 493 493>
 LayerCount: 2
 Fore
@@ -18526,10 +18509,8 @@ SplineSet
  780 314 l 1
  431 314 l 1
 309 729 m 1
- 288 629 l 1
- 234 530 l 1
- 195 530 l 1
- 186 629 l 1
+ 254 530 l 5
+ 175 530 l 1
  207 729 l 1
  309 729 l 1
 EndSplineSet
@@ -18540,7 +18521,7 @@ StartChar: Etatonos
 Encoding: 905 905 590
 Width: 906
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 20 331 125<454 717 428 743> 709 20<200 302 302 302 362 512 512 512 801 951 951 951>
 LayerCount: 2
 Fore
@@ -18559,10 +18540,8 @@ SplineSet
  646 0 l 1
  717 331 l 1
 302 729 m 1
- 281 629 l 1
- 227 530 l 1
- 188 530 l 1
- 179 629 l 1
+ 247 530 l 1
+ 168 530 l 5
  200 729 l 1
  302 729 l 1
 EndSplineSet
@@ -18572,7 +18551,7 @@ StartChar: Iotatonos
 Encoding: 906 906 591
 Width: 473
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 20 709 20<203 305 305 305 365 515 515 515>
 LayerCount: 2
 Fore
@@ -18583,10 +18562,8 @@ SplineSet
  365 729 l 1
  515 729 l 1
 305 729 m 1
- 284 629 l 1
- 230 530 l 1
- 191 530 l 1
- 182 629 l 1
+ 250 530 l 1
+ 171 530 l 5
  203 729 l 1
  305 729 l 1
 EndSplineSet
@@ -18596,7 +18573,7 @@ StartChar: Omicrontonos
 Encoding: 908 908 592
 Width: 844
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 128<421.5 510.5 421.5 512.5> 613 128<533.5 622> 709 20<167 269 269 269>
 VStem: 159 149<227.5 318.5> 732 149<397.5 492>
 LayerCount: 2
@@ -18617,10 +18594,8 @@ SplineSet
  705 270 732 358 732 437 c 0
  732 547 672 613 572 613 c 0
 269 729 m 1x38
- 248 629 l 1
- 194 530 l 1
- 155 530 l 1
- 146 629 l 1
+ 204 530 l 1
+ 135 530 l 1
  167 729 l 1
  269 729 l 1x38
 EndSplineSet
@@ -18631,7 +18606,7 @@ StartChar: Omegatonos
 Encoding: 911 911 593
 Width: 847
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 125<108 281 108 393 81 281 671 808> 621 121<522 621> 709 20<149 251 251 251>
 VStem: 169 150<299 394.5 276 395> 735 153<423 492 413 510.5>
 LayerCount: 2
@@ -18660,10 +18635,8 @@ SplineSet
  319 248 334 203 364 172 c 0
  379 157 391 146 420 125 c 1xd8
 251 729 m 1x38
- 229 629 l 1
- 176 530 l 1
- 137 530 l 1
- 127 629 l 1
+ 186 530 l 1
+ 117 530 l 1
  149 729 l 1
  251 729 l 1x38
 EndSplineSet
@@ -18673,7 +18646,7 @@ StartChar: Upsilontonos
 Encoding: 910 910 594
 Width: 930
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 20 709 20<234 336 336 336 366 534 534 534 822 989 989 989>
 LayerCount: 2
 Fore
@@ -18689,10 +18662,8 @@ SplineSet
  989 729 l 1
  661 270 l 1
 336 729 m 1
- 315 629 l 1
- 261 530 l 1
- 222 530 l 1
- 213 629 l 1
+ 281 530 l 1
+ 202 530 l 5
  234 729 l 1
  336 729 l 1
 EndSplineSet
@@ -18762,7 +18733,7 @@ StartChar: alphatonos
 Encoding: 940 940 597
 Width: 620
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 113<266.5 283> 0 20 436 113<339 375 313.5 382>
 VStem: 90 140<168.5 230 168.5 238.5>
 LayerCount: 2
@@ -18790,10 +18761,8 @@ SplineSet
  308 90 340 110 370 144 c 0
  390 167 405 191 448 274 c 1xb0
 489 789 m 1
- 468 689 l 1
- 414 590 l 1
- 375 590 l 1
- 366 689 l 1
+ 424 590 l 1
+ 365 590 l 5
  387 789 l 1
  489 789 l 1
 EndSplineSet
@@ -18804,7 +18773,7 @@ StartChar: epsilontonos
 Encoding: 941 941 598
 Width: 479
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 106<243.5 294 243.5 294> 443 106<324 376.5>
 VStem: 58 139<120.5 145.5> 131 130<352.5 389 346 398.5>
 LayerCount: 2
@@ -18832,10 +18801,8 @@ SplineSet
  298 443 261 411 261 367 c 0
  261 325 288 312 373 311 c 1xd0
 448 789 m 1
- 427 689 l 1
- 373 590 l 1
- 334 590 l 1
- 325 689 l 1
+ 383 590 l 1
+ 324 590 l 5
  346 789 l 1
  448 789 l 1
 EndSplineSet
@@ -18846,7 +18813,7 @@ StartChar: etatonos
 Encoding: 942 942 599
 Width: 611
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -218 218<66 503 66 363> 430 119<393 524.5> 520 20<181 321 321 321>
 VStem: 484 149<364.5 457>
 LayerCount: 2
@@ -18869,10 +18836,8 @@ SplineSet
  66 0 l 1
  181 540 l 1xb0
 545 789 m 1
- 523 689 l 1
- 470 590 l 1
- 431 590 l 1
- 421 689 l 1
+ 480 590 l 1
+ 421 590 l 5
  443 789 l 1
  545 789 l 1
 EndSplineSet
@@ -18882,7 +18847,7 @@ StartChar: iotatonos
 Encoding: 943 943 600
 Width: 278
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 20 520 20<184 324 324 324>
 LayerCount: 2
 Fore
@@ -18893,10 +18858,8 @@ SplineSet
  184 540 l 1
  324 540 l 1
 358 789 m 1
- 337 689 l 1
- 283 590 l 1
- 244 590 l 1
- 235 689 l 1
+ 293 590 l 1
+ 234 590 l 5
  256 789 l 1
  358 789 l 1
 EndSplineSet
@@ -18907,7 +18870,7 @@ StartChar: omicrontonos
 Encoding: 972 972 601
 Width: 611
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 113<294.5 351 294.5 357> 436 113<366.5 429>
 VStem: 85 143<168 244.5> 495 142<295 356.5>
 LayerCount: 2
@@ -18927,10 +18890,8 @@ SplineSet
  479 216 495 271 495 319 c 0
  495 394 460 436 398 436 c 0
 514 789 m 1
- 493 689 l 1
- 439 590 l 1
- 400 590 l 1
- 391 689 l 1
+ 449 590 l 1
+ 390 590 l 5
  412 789 l 1
  514 789 l 1
 EndSplineSet
@@ -18941,7 +18902,7 @@ StartChar: omegatonos
 Encoding: 974 974 602
 Width: 834
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -25 116<288 316> -24 116<555.5 584 552 612> 520 20<275 434 434 434 627 771 771 771>
 VStem: 114 135<144 229 144 230.5> 689 135<305.5 371.5>
 LayerCount: 2
@@ -18971,10 +18932,8 @@ SplineSet
  676 217 689 278 689 333 c 0
  689 410 670 473 627 540 c 1x78
 636 789 m 1
- 614 689 l 1
- 561 590 l 1
- 522 590 l 1
- 512 689 l 1
+ 571 590 l 1
+ 512 590 l 5
  534 789 l 1
  636 789 l 1
 EndSplineSet
@@ -18985,7 +18944,7 @@ StartChar: upsilontonos
 Encoding: 973 973 603
 Width: 591
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 113<290 330.5 290 347> 520 20<169 309 309 309 512 652 652 652>
 VStem: 88 144<110 162.5>
 LayerCount: 2
@@ -19008,10 +18967,8 @@ SplineSet
  169 540 l 1
  309 540 l 1
 514 789 m 1
- 493 689 l 1
- 440 590 l 1
- 400 590 l 1
- 391 689 l 1
+ 450 590 l 1
+ 390 590 l 5
  412 789 l 1
  514 789 l 1
 EndSplineSet
@@ -19022,7 +18979,7 @@ StartChar: iotadieresistonos
 Encoding: 912 912 604
 Width: 278
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: 0 20 520 20<184 324 324 324> 621 122<149 220 123 246 149 322 348 419> 700 189<277 306 267 379>
 LayerCount: 2
 Fore
@@ -19043,11 +19000,9 @@ SplineSet
  348 743 l 1
  445 743 l 1
 379 889 m 1x10
- 360 799 l 1
  306 700 l 1
- 267 700 l 1
- 258 799 l 1
- 277 889 l 1
+ 267 700 l 5
+ 277 889 l 5
  379 889 l 1x10
 EndSplineSet
 EndChar
@@ -19056,7 +19011,7 @@ StartChar: upsilondieresistonos
 Encoding: 944 944 605
 Width: 591
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 113<290 330.5 290 347> 520 20<169 309 309 309 512 652 652 652> 621 122<306 377 280 403 306 479 505 576> 700 189<434 463 424 536>
 VStem: 88 144<110 162.5>
 LayerCount: 2
@@ -19089,11 +19044,9 @@ SplineSet
  505 743 l 1
  602 743 l 1
 536 889 m 1x18
- 517 799 l 1
  463 700 l 1
- 424 700 l 1
- 415 799 l 1
- 434 889 l 1
+ 424 700 l 5
+ 434 889 l 5
  536 889 l 1x18
 EndSplineSet
 EndChar
