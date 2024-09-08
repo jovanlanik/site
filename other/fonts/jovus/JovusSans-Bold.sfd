@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1495029637
-ModificationTime: 1725466193
+ModificationTime: 1725725602
 PfmFamily: 81
 TTFWeight: 700
 TTFWidth: 5
@@ -118,7 +118,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 38 15
+WinInfo: 38 38 15
 BeginPrivate: 7
 BlueValues 31 [-23 0 540 549 729 741 709 724]
 BlueShift 1 0
@@ -1245,30 +1245,28 @@ StartChar: G
 Encoding: 71 71 40
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 128<339 428.5 339 432> 267 125<419 585 419 711> 613 128<332 422>
 VStem: 42 150<286 439.5 286 472.5>
 LayerCount: 2
 Fore
 SplineSet
-711 392 m 1
- 711 -2 l 1
- 621 -2 l 1
- 603 94 l 1
- 547 12 481 -23 383 -23 c 0
- 186 -23 42 138 42 359 c 0
- 42 586 185 741 395 741 c 0
- 571 741 693 647 711 496 c 1
- 570 496 l 1
- 557 534 546 551 525 569 c 0
- 492 598 448 613 396 613 c 0
- 268 613 192 518 192 361 c 0
- 192 211 278 105 400 105 c 0
- 457 105 513 131 549 175 c 0
- 571 201 581 226 585 267 c 1
- 419 267 l 1
- 419 392 l 1
- 711 392 l 1
+383 -23 m 4
+ 186.010576613 -20.958658825 42 138 42 359 c 4
+ 42 586 185 741 395 741 c 4
+ 571 741 693 647 711 496 c 5
+ 570 496 l 5
+ 557 534 546 551 525 569 c 4
+ 492 598 448 613 396 613 c 4
+ 268 613 192 518 192 361 c 4
+ 192 211 278 105 400 105 c 4
+ 457 105 513 131 549 175 c 4
+ 571 201 581 226 585 267 c 5
+ 419 267 l 5
+ 419 392 l 5
+ 711 392 l 5
+ 711 267 l 5
+ 711 82 576 -25 383 -23 c 4
 EndSplineSet
 Kerns2: 577 -15 "'kern' Horizontal Kerning lookup 0 subtable" 573 -12 "'kern' Horizontal Kerning lookup 0 subtable" 275 8 "'kern' Horizontal Kerning lookup 0 subtable" 182 2 "'kern' Horizontal Kerning lookup 0 subtable" 166 4 "'kern' Horizontal Kerning lookup 0 subtable" 164 4 "'kern' Horizontal Kerning lookup 0 subtable" 134 3 "'kern' Horizontal Kerning lookup 0 subtable" 133 -9 "'kern' Horizontal Kerning lookup 0 subtable" 132 -9 "'kern' Horizontal Kerning lookup 0 subtable" 131 -9 "'kern' Horizontal Kerning lookup 0 subtable" 130 -9 "'kern' Horizontal Kerning lookup 0 subtable" 129 -9 "'kern' Horizontal Kerning lookup 0 subtable" 128 -9 "'kern' Horizontal Kerning lookup 0 subtable" 90 -4 "'kern' Horizontal Kerning lookup 0 subtable" 88 -1 "'kern' Horizontal Kerning lookup 0 subtable" 80 2 "'kern' Horizontal Kerning lookup 0 subtable" 70 8 "'kern' Horizontal Kerning lookup 0 subtable" 66 4 "'kern' Horizontal Kerning lookup 0 subtable" 59 -11 "'kern' Horizontal Kerning lookup 0 subtable" 58 -56 "'kern' Horizontal Kerning lookup 0 subtable" 57 -7 "'kern' Horizontal Kerning lookup 0 subtable" 56 -23 "'kern' Horizontal Kerning lookup 0 subtable" 55 -39 "'kern' Horizontal Kerning lookup 0 subtable" 53 -20 "'kern' Horizontal Kerning lookup 0 subtable" 52 -1 "'kern' Horizontal Kerning lookup 0 subtable" 41 1 "'kern' Horizontal Kerning lookup 0 subtable" 34 -9 "'kern' Horizontal Kerning lookup 0 subtable" 28 24 "'kern' Horizontal Kerning lookup 0 subtable" 27 24 "'kern' Horizontal Kerning lookup 0 subtable" 15 7 "'kern' Horizontal Kerning lookup 0 subtable" 14 26 "'kern' Horizontal Kerning lookup 0 subtable" 13 7 "'kern' Horizontal Kerning lookup 0 subtable" 8 -8 "'kern' Horizontal Kerning lookup 0 subtable"
 EndChar
@@ -6902,30 +6900,28 @@ StartChar: Gcircumflex
 Encoding: 284 284 220
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 128<339 428.5 339 432> 267 125<419 585 419 711> 613 128<332 422>
 VStem: 42 150<286 439.5 286 472.5>
 LayerCount: 2
 Fore
 SplineSet
-711 392 m 1
- 711 -2 l 1
- 621 -2 l 1
- 603 94 l 1
- 547 12 481 -23 383 -23 c 0
- 186 -23 42 138 42 359 c 0
- 42 586 185 741 395 741 c 0
- 571 741 693 647 711 496 c 1
- 570 496 l 1
- 557 534 546 551 525 569 c 0
- 492 598 448 613 396 613 c 0
- 268 613 192 518 192 361 c 0
- 192 211 278 105 400 105 c 0
- 457 105 513 131 549 175 c 0
- 571 201 581 226 585 267 c 1
- 419 267 l 1
- 419 392 l 1
- 711 392 l 1
+383 -23 m 4
+ 186.010576613 -20.958658825 42 138 42 359 c 4
+ 42 586 185 741 395 741 c 4
+ 571 741 693 647 711 496 c 5
+ 570 496 l 5
+ 557 534 546 551 525 569 c 4
+ 492 598 448 613 396 613 c 4
+ 268 613 192 518 192 361 c 4
+ 192 211 278 105 400 105 c 4
+ 457 105 513 131 549 175 c 4
+ 571 201 581 226 585 267 c 5
+ 419 267 l 5
+ 419 392 l 5
+ 711 392 l 5
+ 711 267 l 5
+ 711 82 576 -25 383 -23 c 4
 338 936 m 1
  446 936 l 1
  549 786 l 1
@@ -6983,30 +6979,28 @@ StartChar: Gbreve
 Encoding: 286 286 222
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 128<339 428.5 339 432> 267 125<419 585 419 711> 613 128<332 422> 784 77<375.5 420.5 375.5 435.5>
 VStem: 42 150<286 439.5 286 472.5>
 LayerCount: 2
 Fore
 SplineSet
-711 392 m 1
- 711 -2 l 1
- 621 -2 l 1
- 603 94 l 1
- 547 12 481 -23 383 -23 c 0
- 186 -23 42 138 42 359 c 0
- 42 586 185 741 395 741 c 0
- 571 741 693 647 711 496 c 1
- 570 496 l 1
- 557 534 546 551 525 569 c 0
- 492 598 448 613 396 613 c 0
- 268 613 192 518 192 361 c 0
- 192 211 278 105 400 105 c 0
- 457 105 513 131 549 175 c 0
- 571 201 581 226 585 267 c 1
- 419 267 l 1
- 419 392 l 1
- 711 392 l 1
+383 -23 m 4
+ 186.010576613 -20.958658825 42 138 42 359 c 4
+ 42 586 185 741 395 741 c 4
+ 571 741 693 647 711 496 c 5
+ 570 496 l 5
+ 557 534 546 551 525 569 c 4
+ 492 598 448 613 396 613 c 4
+ 268 613 192 518 192 361 c 4
+ 192 211 278 105 400 105 c 4
+ 457 105 513 131 549 175 c 4
+ 571 201 581 226 585 267 c 5
+ 419 267 l 5
+ 419 392 l 5
+ 711 392 l 5
+ 711 267 l 5
+ 711 82 576 -25 383 -23 c 4
 530 927 m 1
  530 916 l 2
  530 841 473 784 398 784 c 0
@@ -7066,30 +7060,28 @@ StartChar: Gdotaccent
 Encoding: 288 288 224
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 128<339 428.5 339 432> 267 125<419 585 419 711> 613 128<332 422> 800 122<322 432 322 432>
 VStem: 42 150<286 439.5 286 472.5> 322 110<800 922 800 922>
 LayerCount: 2
 Fore
 SplineSet
-711 392 m 1
- 711 -2 l 1
- 621 -2 l 1
- 603 94 l 1
- 547 12 481 -23 383 -23 c 0
- 186 -23 42 138 42 359 c 0
- 42 586 185 741 395 741 c 0
- 571 741 693 647 711 496 c 1
- 570 496 l 1
- 557 534 546 551 525 569 c 0
- 492 598 448 613 396 613 c 0
- 268 613 192 518 192 361 c 0
- 192 211 278 105 400 105 c 0
- 457 105 513 131 549 175 c 0
- 571 201 581 226 585 267 c 1
- 419 267 l 1
- 419 392 l 1
- 711 392 l 1
+383 -23 m 4
+ 186.010576613 -20.958658825 42 138 42 359 c 4
+ 42 586 185 741 395 741 c 4
+ 571 741 693 647 711 496 c 5
+ 570 496 l 5
+ 557 534 546 551 525 569 c 4
+ 492 598 448 613 396 613 c 4
+ 268 613 192 518 192 361 c 4
+ 192 211 278 105 400 105 c 4
+ 457 105 513 131 549 175 c 4
+ 571 201 581 226 585 267 c 5
+ 419 267 l 5
+ 419 392 l 5
+ 711 392 l 5
+ 711 267 l 5
+ 711 82 576 -25 383 -23 c 4
 432 922 m 1
  432 800 l 1
  322 800 l 1
@@ -7141,18 +7133,14 @@ StartChar: Gcommaaccent
 Encoding: 290 290 226
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -172 112<332 399 332 454> -23 128<339 428.5 339 432> 267 125<419 585 419 711> 613 128<332 422>
 VStem: 42 150<286 439.5 286 472.5> 332 122<-307 -60 -261 -60 -163 -60 -163 -60 -163 -60>
 LayerCount: 2
 Fore
 SplineSet
-711 392 m 1
- 711 -2 l 1
- 621 -2 l 1
- 603 94 l 1
- 547 12 481 -23 383 -23 c 0
- 186 -23 42 138 42 359 c 0
+383 -23 m 0
+ 186.010576613 -20.958658825 42 138 42 359 c 0
  42 586 185 741 395 741 c 0
  571 741 693 647 711 496 c 1
  570 496 l 1
@@ -7165,6 +7153,8 @@ SplineSet
  419 267 l 1
  419 392 l 1
  711 392 l 1
+ 711 267 l 1
+ 711 82 576 -25 383 -23 c 0
 332 -60 m 1
  454 -60 l 1
  454 -163 l 2

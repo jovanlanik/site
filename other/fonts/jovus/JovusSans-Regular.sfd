@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1501172789
-ModificationTime: 1725464024
+ModificationTime: 1725725110
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -118,7 +118,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 114 38 15
+WinInfo: 0 38 15
 BeginPrivate: 6
 BlueValues 31 [-23 0 524 539 729 741 709 724]
 BlueShift 1 0
@@ -550,16 +550,16 @@ StartChar: slash
 Encoding: 47 47 16
 Width: 278
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -20 20 709 20<229 284 284 284>
 LayerCount: 2
 Fore
 SplineSet
-229 729 m 1
- 284 729 l 1
- 47 -20 l 1
- -8 -20 l 1
- 229 729 l 1
+223 729 m 1
+ 291 729 l 1
+ 54 -20 l 1
+ -14 -20 l 1
+ 223 729 l 1
 EndSplineSet
 Kerns2: 852 36 "'kern' Horizontal Kerning lookup 0 subtable" 851 39 "'kern' Horizontal Kerning lookup 0 subtable" 90 3 "'kern' Horizontal Kerning lookup 0 subtable" 85 19 "'kern' Horizontal Kerning lookup 0 subtable" 77 21 "'kern' Horizontal Kerning lookup 0 subtable" 76 26 "'kern' Horizontal Kerning lookup 0 subtable" 75 17 "'kern' Horizontal Kerning lookup 0 subtable" 74 18 "'kern' Horizontal Kerning lookup 0 subtable" 73 20 "'kern' Horizontal Kerning lookup 0 subtable" 72 18 "'kern' Horizontal Kerning lookup 0 subtable" 71 17 "'kern' Horizontal Kerning lookup 0 subtable" 67 28 "'kern' Horizontal Kerning lookup 0 subtable" 59 11 "'kern' Horizontal Kerning lookup 0 subtable" 58 31 "'kern' Horizontal Kerning lookup 0 subtable" 57 19 "'kern' Horizontal Kerning lookup 0 subtable" 56 28 "'kern' Horizontal Kerning lookup 0 subtable" 55 23 "'kern' Horizontal Kerning lookup 0 subtable" 54 32 "'kern' Horizontal Kerning lookup 0 subtable" 53 29 "'kern' Horizontal Kerning lookup 0 subtable" 51 31 "'kern' Horizontal Kerning lookup 0 subtable" 47 40 "'kern' Horizontal Kerning lookup 0 subtable" 46 40 "'kern' Horizontal Kerning lookup 0 subtable" 45 38 "'kern' Horizontal Kerning lookup 0 subtable" 44 38 "'kern' Horizontal Kerning lookup 0 subtable" 43 -4 "'kern' Horizontal Kerning lookup 0 subtable" 42 28 "'kern' Horizontal Kerning lookup 0 subtable" 41 36 "'kern' Horizontal Kerning lookup 0 subtable" 39 33 "'kern' Horizontal Kerning lookup 0 subtable" 38 33 "'kern' Horizontal Kerning lookup 0 subtable" 37 33 "'kern' Horizontal Kerning lookup 0 subtable" 35 38 "'kern' Horizontal Kerning lookup 0 subtable" 16 18 "'kern' Horizontal Kerning lookup 0 subtable"
 Substitution2: "'dnom' Denominators lookup 4 subtable" fraction
@@ -1229,31 +1229,29 @@ StartChar: G
 Encoding: 71 71 40
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 82<361 427.5> 303 82<405 627 405 709> 659 82<349.5 448.5>
 VStem: 44 93<317 422.5>
 LayerCount: 2
 Fore
 SplineSet
-709 385 m 1
- 709 -4 l 1
- 650 -4 l 1
- 627 93 l 1
- 555 14 477 -23 378 -23 c 0
- 181 -23 44 133 44 357 c 0
- 44 488 91 601 176 671 c 0
- 233 718 305 741 394 741 c 0
- 561 741 673 656 699 508 c 1
- 604 508 l 1
- 584 602 504 659 393 659 c 0
- 239 659 137 541 137 362 c 0
- 137 272 166 185 214 133 c 0
- 257 86 324 59 398 59 c 0
- 531 59 627 153 627 283 c 2
- 627 303 l 1
- 405 303 l 1
- 405 385 l 1
- 709 385 l 1
+378 -23 m 4
+ 181.00227668 -23.947104439 44 133 44 357 c 4
+ 44 488 91 601 176 671 c 4
+ 233 718 305 741 394 741 c 4
+ 561 741 673 656 699 508 c 5
+ 604 508 l 5
+ 584 602 504 659 393 659 c 4
+ 239 659 137 541 137 362 c 4
+ 137 272 166 185 214 133 c 4
+ 257 86 324 59 398 59 c 4
+ 531 59 627 153 627 283 c 6
+ 627 303 l 5
+ 405 303 l 5
+ 405 385 l 5
+ 709 385 l 5
+ 709 303 l 6
+ 709 86 586 -22 378 -23 c 4
 EndSplineSet
 Kerns2: 577 -9 "'kern' Horizontal Kerning lookup 0 subtable" 573 -17 "'kern' Horizontal Kerning lookup 0 subtable" 275 1 "'kern' Horizontal Kerning lookup 0 subtable" 182 3 "'kern' Horizontal Kerning lookup 0 subtable" 166 -2 "'kern' Horizontal Kerning lookup 0 subtable" 164 -6 "'kern' Horizontal Kerning lookup 0 subtable" 134 -3 "'kern' Horizontal Kerning lookup 0 subtable" 133 -6 "'kern' Horizontal Kerning lookup 0 subtable" 132 -6 "'kern' Horizontal Kerning lookup 0 subtable" 131 -6 "'kern' Horizontal Kerning lookup 0 subtable" 130 -6 "'kern' Horizontal Kerning lookup 0 subtable" 129 -6 "'kern' Horizontal Kerning lookup 0 subtable" 128 -6 "'kern' Horizontal Kerning lookup 0 subtable" 90 -14 "'kern' Horizontal Kerning lookup 0 subtable" 88 -5 "'kern' Horizontal Kerning lookup 0 subtable" 80 3 "'kern' Horizontal Kerning lookup 0 subtable" 66 -6 "'kern' Horizontal Kerning lookup 0 subtable" 59 -12 "'kern' Horizontal Kerning lookup 0 subtable" 58 -63 "'kern' Horizontal Kerning lookup 0 subtable" 57 -9 "'kern' Horizontal Kerning lookup 0 subtable" 56 -27 "'kern' Horizontal Kerning lookup 0 subtable" 55 -49 "'kern' Horizontal Kerning lookup 0 subtable" 53 -44 "'kern' Horizontal Kerning lookup 0 subtable" 52 -13 "'kern' Horizontal Kerning lookup 0 subtable" 41 -5 "'kern' Horizontal Kerning lookup 0 subtable" 34 -6 "'kern' Horizontal Kerning lookup 0 subtable" 28 12 "'kern' Horizontal Kerning lookup 0 subtable" 27 7 "'kern' Horizontal Kerning lookup 0 subtable" 15 -5 "'kern' Horizontal Kerning lookup 0 subtable" 14 16 "'kern' Horizontal Kerning lookup 0 subtable" 13 -5 "'kern' Horizontal Kerning lookup 0 subtable" 8 -11 "'kern' Horizontal Kerning lookup 0 subtable"
 EndChar
@@ -1790,16 +1788,16 @@ StartChar: backslash
 Encoding: 92 92 61
 Width: 278
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -20 20 709 20<-8 47 47 47>
 LayerCount: 2
 Fore
 SplineSet
-47 729 m 1
- 284 -20 l 1
- 229 -20 l 1
- -8 729 l 1
- 47 729 l 1
+53 729 m 1
+ 290 -20 l 1
+ 223 -20 l 5
+ -14 729 l 5
+ 53 729 l 1
 EndSplineSet
 Kerns2: 852 36 "'kern' Horizontal Kerning lookup 0 subtable" 851 38 "'kern' Horizontal Kerning lookup 0 subtable" 169 45 "'kern' Horizontal Kerning lookup 0 subtable" 77 50 "'kern' Horizontal Kerning lookup 0 subtable" 75 48 "'kern' Horizontal Kerning lookup 0 subtable" 74 51 "'kern' Horizontal Kerning lookup 0 subtable" 72 47 "'kern' Horizontal Kerning lookup 0 subtable" 71 42 "'kern' Horizontal Kerning lookup 0 subtable" 69 52 "'kern' Horizontal Kerning lookup 0 subtable" 59 22 "'kern' Horizontal Kerning lookup 0 subtable" 58 -34 "'kern' Horizontal Kerning lookup 0 subtable" 57 25 "'kern' Horizontal Kerning lookup 0 subtable" 56 11 "'kern' Horizontal Kerning lookup 0 subtable" 55 -11 "'kern' Horizontal Kerning lookup 0 subtable" 54 24 "'kern' Horizontal Kerning lookup 0 subtable" 53 -44 "'kern' Horizontal Kerning lookup 0 subtable" 52 28 "'kern' Horizontal Kerning lookup 0 subtable" 51 31 "'kern' Horizontal Kerning lookup 0 subtable" 50 29 "'kern' Horizontal Kerning lookup 0 subtable" 49 32 "'kern' Horizontal Kerning lookup 0 subtable" 48 29 "'kern' Horizontal Kerning lookup 0 subtable" 47 39 "'kern' Horizontal Kerning lookup 0 subtable" 46 40 "'kern' Horizontal Kerning lookup 0 subtable" 45 37 "'kern' Horizontal Kerning lookup 0 subtable" 44 38 "'kern' Horizontal Kerning lookup 0 subtable" 43 9 "'kern' Horizontal Kerning lookup 0 subtable" 42 27 "'kern' Horizontal Kerning lookup 0 subtable" 41 36 "'kern' Horizontal Kerning lookup 0 subtable" 40 26 "'kern' Horizontal Kerning lookup 0 subtable" 37 33 "'kern' Horizontal Kerning lookup 0 subtable" 36 28 "'kern' Horizontal Kerning lookup 0 subtable" 35 38 "'kern' Horizontal Kerning lookup 0 subtable" 34 27 "'kern' Horizontal Kerning lookup 0 subtable"
 EndChar
@@ -2743,13 +2741,13 @@ VStem: 121 84<420 524> 122 83<-205 133 -205 133>
 LayerCount: 2
 Fore
 SplineSet
-122 -205 m 27xa0
+122 -205 m 3xa0
  122 -73 122 1 122 133 c 27
  122 220 134 356 134 356 c 1
  193 356 l 1
  193 356 205 220 205 133 c 27
  205 1 205 -205 205 -205 c 1
- 205 -205 122 -237 122 -205 c 27xa0
+ 122 -205 l 3xa0
 121 420 m 1xc0
  121 524 l 1
  205 524 l 1
@@ -6864,18 +6862,14 @@ StartChar: Gcircumflex
 Encoding: 284 284 220
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 82<361 427.5> 303 82<405 627 405 709> 659 82<349.5 448.5>
 VStem: 44 93<317 422.5>
 LayerCount: 2
 Fore
 SplineSet
-709 385 m 1
- 709 -4 l 1
- 650 -4 l 1
- 627 93 l 1
- 555 14 477 -23 378 -23 c 0
- 181 -23 44 133 44 357 c 0
+378 -23 m 0
+ 181.00227668 -23.947104439 44 133 44 357 c 0
  44 488 91 601 176 671 c 0
  233 718 305 741 394 741 c 0
  561 741 673 656 699 508 c 1
@@ -6889,6 +6883,8 @@ SplineSet
  405 303 l 1
  405 385 l 1
  709 385 l 1
+ 709 303 l 2
+ 709 86 586 -22 378 -23 c 0
 338 940 m 1
  433 940 l 1
  529 790 l 1
@@ -6946,18 +6942,14 @@ StartChar: Gbreve
 Encoding: 286 286 222
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 82<361 427.5> 303 82<405 627 405 709> 659 82<349.5 448.5> 796 69<372 427.5 372 444.5>
 VStem: 44 93<317 422.5>
 LayerCount: 2
 Fore
 SplineSet
-709 385 m 1
- 709 -4 l 1
- 650 -4 l 1
- 627 93 l 1
- 555 14 477 -23 378 -23 c 0
- 181 -23 44 133 44 357 c 0
+378 -23 m 0
+ 181.00227668 -23.947104439 44 133 44 357 c 0
  44 488 91 601 176 671 c 0
  233 718 305 741 394 741 c 0
  561 741 673 656 699 508 c 1
@@ -6971,6 +6963,8 @@ SplineSet
  405 303 l 1
  405 385 l 1
  709 385 l 1
+ 709 303 l 2
+ 709 86 586 -22 378 -23 c 0
 249 931 m 1
  308 931 l 1
  313 887 343 865 401 865 c 0
@@ -7028,31 +7022,29 @@ StartChar: Gdotaccent
 Encoding: 288 288 224
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -23 82<361 427.5> 303 82<405 627 405 709> 659 82<349.5 448.5> 811 104<338 442 338 442>
 VStem: 44 93<317 422.5> 338 104<811 915 811 915>
 LayerCount: 2
 Fore
 SplineSet
-709 385 m 1
- 709 -4 l 1
- 650 -4 l 1
- 627 93 l 1
- 555 14 477 -23 378 -23 c 0
- 181 -23 44 133 44 357 c 0
- 44 488 91 601 176 671 c 0
- 233 718 305 741 394 741 c 0
- 561 741 673 656 699 508 c 1
- 604 508 l 1
- 584 602 504 659 393 659 c 0
- 239 659 137 541 137 362 c 0
- 137 272 166 185 214 133 c 0
- 257 86 324 59 398 59 c 0
- 531 59 627 153 627 283 c 2
- 627 303 l 1
- 405 303 l 1
- 405 385 l 1
- 709 385 l 1
+378 -23 m 4
+ 181.00227668 -23.947104439 44 133 44 357 c 4
+ 44 488 91 601 176 671 c 4
+ 233 718 305 741 394 741 c 4
+ 561 741 673 656 699 508 c 5
+ 604 508 l 5
+ 584 602 504 659 393 659 c 4
+ 239 659 137 541 137 362 c 4
+ 137 272 166 185 214 133 c 4
+ 257 86 324 59 398 59 c 4
+ 531 59 627 153 627 283 c 6
+ 627 303 l 5
+ 405 303 l 5
+ 405 385 l 5
+ 709 385 l 5
+ 709 303 l 6
+ 709 86 586 -22 378 -23 c 4
 442 915 m 1
  442 811 l 1
  338 811 l 1
@@ -7104,18 +7096,14 @@ StartChar: Gcommaaccent
 Encoding: 290 290 226
 Width: 778
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 HStem: -160 100<337 392 337 437> -23 82<361 427.5> 303 82<405 627 405 709> 659 82<349.5 448.5>
 VStem: 44 93<317 422.5>
 LayerCount: 2
 Fore
 SplineSet
-709 385 m 1
- 709 -4 l 1
- 650 -4 l 1
- 627 93 l 1
- 555 14 477 -23 378 -23 c 0
- 181 -23 44 133 44 357 c 0
+378 -23 m 0
+ 181.00227668 -23.947104439 44 133 44 357 c 0
  44 488 91 601 176 671 c 0
  233 718 305 741 394 741 c 0
  561 741 673 656 699 508 c 1
@@ -7129,6 +7117,8 @@ SplineSet
  405 303 l 1
  405 385 l 1
  709 385 l 1
+ 709 303 l 2
+ 709 86 586 -22 378 -23 c 0
 337 -60 m 1
  437 -60 l 1
  437 -163 l 2

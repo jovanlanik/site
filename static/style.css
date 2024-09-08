@@ -2,6 +2,21 @@
 @import url("/fonts/cousine.css");
 
 :root {
+	--color-light: #f5f5f5;
+	--color-light-alt: #e2e2e2;
+	--color-dark: #0c0c0c;
+	--color-dark-alt: black;
+
+	/* TODO: these colors are bad */
+	--color-blue: #1a3dab;
+	--color-blue-light: #1d44b0;
+	--color-blue-dark: #1a3ca0;
+
+	--color-bg: var(--color-light);
+	--color-bg-alt: var(--color-light-alt);
+	--color-fg: var(--color-dark);
+	--color-fg-alt: var(--color-dark-alt);
+
 	font-family: "Jovus Sans", sans-serif;
 	/*
 	font-optical-sizing: auto;
@@ -9,17 +24,12 @@
 	*/
 }
 
+::selection {
+	color: var(--color-bg);
+	background-color: var(--color-blue-light);
+}
+
 body {
-	--color-light: #f5f5f5;
-	--color-light-alt: #e2e2e2;
-	--color-dark: #0c0c0c;
-	--color-dark-alt: black;
-
-	--color-bg: var(--color-light);
-	--color-bg-alt: var(--color-light-alt);
-	--color-fg: var(--color-dark);
-	--color-fg-alt: var(--color-dark-alt);
-
 	margin: 0;
 	min-height: 100vh;
 	display: flex;
@@ -40,7 +50,8 @@ body::before {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
+	/* TODO: link colors */
+	:root {
 		--color-bg: var(--color-dark);
 		--color-bg-alt: var(--color-dark-alt);
 		--color-fg: var(--color-light-alt);
@@ -156,6 +167,10 @@ h1, h2 {
 
 a {
 	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: var(--color-blue);
 }
 
 hr {
