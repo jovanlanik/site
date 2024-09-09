@@ -27,7 +27,7 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           ssh-keyscan -H lanikjo.org > ~/.ssh/known_hosts
       - name: Deploy to VPS
-        run: rsync -vrl --progress --delete ./deploy lanikjo@lanikjo.org:/var/www/deploy
+        run: rsync -vrl --progress --delete ./deploy/ lanikjo@lanikjo.org:/var/www/deploy
       - run: python3 generate_site.py
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v2
