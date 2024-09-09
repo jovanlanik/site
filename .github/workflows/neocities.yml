@@ -18,7 +18,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - run: python3 generate_site.py -J '{ "host": { "name": "selfhosted", "badge": { "href": "https://www.lighttpd.net/", "src":"lighttpd.png", "alt": "selfhosted using lighttpd" } } }'
+      - run: |
+          'python3 generate_site.py -J '{ "host": { "name": "selfhosted", "badge": { "href": "https://www.lighttpd.net/", "src":"lighttpd.png", "alt": "selfhosted using lighttpd" } } }''
       - name: Install ssh keys
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
