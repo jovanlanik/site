@@ -1,3 +1,3 @@
 # Jovan's personal site
-This is the source for my personal neocities site.
-Available at https://lanikjo.neocities.org
+This is the source for my personal website.
+Available at https://www.lanikjo.org nad https://lanikjo.neocities.org/.
