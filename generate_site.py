@@ -20,7 +20,11 @@ def generate(args):
 
     main_out = main_dir.joinpath("deploy")
 
-    shutil.rmtree(main_out, ignore_errors=True)
+    for child in main_out.iterdir():
+        if child.is_file():
+            child.unlink()
+        else:
+            shutil.rmtree(child, ignore_errors=True)
 
     # copy static files
     shutil.copytree(static_dir, main_out, dirs_exist_ok=True)
